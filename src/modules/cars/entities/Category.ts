@@ -15,7 +15,7 @@ class Category {
   @CreateDateColumn()
   created_at: Date;
 
-  //O construtor é chamado sempre que a classe é instanciada
+  // O construtor é chamado sempre que a classe é instanciada
   constructor() {
     if (!this.id) {
       this.id = uuidV4();
