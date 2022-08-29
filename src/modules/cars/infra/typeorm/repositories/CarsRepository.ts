@@ -6,13 +6,13 @@ import { ICarsRepository } from "@modules/cars/repositories/ICarsRepository";
 import { Car } from "../entities/Car";
 
 class CarsRepository implements ICarsRepository {
-  
+
   private repository: Repository<Car>;
 
   constructor() {
     this.repository = getRepository(Car);
   }
-  
+
   async create({
     brand,
     category_id,
